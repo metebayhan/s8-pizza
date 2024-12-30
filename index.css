@@ -1,0 +1,108 @@
+.site-header {
+    background-color: #CE2829;
+    width: 1920px;
+    height: 207px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 1px solid #C20608;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.site-logo{
+    max-width: 100%;      
+    height: auto;           
+}
+
+.page-path{
+    color: #FAF7F2;
+    font-size: 1.2rem;
+    float: left;
+
+}
+main {
+    width: 532px;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+  body{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  }
+  
+  .pizza-name {
+    color: #292929;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    
+  }
+
+  .pizza-price {
+    color: #292929;
+    font-family: 'Barlow', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .pizza-description{
+    color: #5F5F5F;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    line-height: 28.8px;
+  }
+  fieldset {
+    border: none; 
+    padding: 0; 
+  }
+  .extra-toppings-items{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    align-items:center;
+    align-content:center;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Barlow', sans-serif;
+    color: #5F5F5F;
+
+    
+  }
+  .extra-toppings-items label {
+    flex: 0 0 33.33%; 
+    margin-bottom: 10px; 
+    box-sizing: border-box;
+  }
+  .size-selection{
+    display:flex;
+flex-direction:column;
+flex-wrap:wrap;
+justify-content:flex-start;
+align-items:flex-start;
+align-content:flex-start;
+  }
+  .thickness-selection {
+    display:flex;
+flex-direction:column;
+flex-wrap:wrap;
+justify-content:flex-start;
+align-items:flex-start;
+align-content:flex-start;
+  }
+  textarea {
+    width: 100%;
+    max-width: 500px;
+    min-width: 300px;
+    height: 75px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  

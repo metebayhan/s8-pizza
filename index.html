@@ -6,50 +6,62 @@
     <link rel="icon" type="image/svg+xml" href="./workintech.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Teknolojik Yemekler</title>
   </head>
 
   <body>
     <div id="root"></div>
+
     <script type="module" src="/src/main.jsx"></script>
-    <div>
-      <header>
-       <h1>Teknolojik Yemekler</h1>
-       <p>Anasayfa - Sipariş Oluştur</p>
-      </header>
 
-       <div>
-       <h2>Position Absolute Acı Pizza</h2>
-       <p>85.50₺</p>
-       <p>Frontent Dev olarak hala position:absolute kullanıyorsan bu çok acı pizza tam sana göre. Pizza, domates, peynir ve genellikle çeşitli diğer malzemelerle kaplanmış, daha sonra geleneksel olarak odun ateşinde bir fırında yüksek sıcaklıkta pişirilen, genellikle yuvarlak, düzleştirilmiş mayalı buğday bazlı hamurdan oluşan İtalyan kökenli lezzetli bir yemektir. . Küçük bir pizzaya bazen pizzetta denir.</p>
-       
-       <div>
-         <form>
-        <h3>Boyut Seç</h3>
-          <label>
-            <input type="radio" name="size" value="Küçük">
-            Küçük
-          </label>
-          <label>
-            <input type="radio" name="size" value="Orta">
-            Orta
-          </label>
-          <label>
-            <input type="radio" name="size" value="Büyük">
-            Büyük
-          </label>
+    <header class="site-header">
+      <img class="site-logo"src=".\images\iteration-1-images\logo.svg" alt="">
+      <p class="page-path">Anasayfa - Sipariş Oluştur</p>
+    </header>
 
-          <label>
-            <h3>Hamur Seç</h3>
+    <main>
+      <section class="pizza-item">
+        <h2 class="pizza-name">Position Absolute Acı Pizza</h2>
+        <p class="pizza-price">85.50₺</p>
+        <p class="pizza-description">
+          Frontend Dev olarak hala position:absolute kullanıyorsan bu çok acı pizza tam sana göre. Pizza, domates, peynir ve genellikle çeşitli diğer malzemelerle kaplanmış, daha sonra geleneksel olarak odun ateşinde bir fırında yüksek sıcaklıkta pişirilen, genellikle yuvarlak, düzleştirilmiş mayalı buğday bazlı hamurdan oluşan İtalyan kökenli lezzetli bir yemektir. Küçük bir pizzaya bazen pizzetta denir.
+        </p>
+      </section>
+
+      <section class="order-form">
+        <form>
+          <fieldset class="size-selection">
+            <legend>Boyut Seç</legend>
+            <label>
+              <input type="radio" name="size" value="Küçük">
+              Küçük
+            </label>
+            <label>
+              <input type="radio" name="size" value="Orta">
+              Orta
+            </label>
+            <label>
+              <input type="radio" name="size" value="Büyük">
+              Büyük
+            </label>
+          </fieldset>
+
+          <fieldset class="thickness-selection">
+            <legend>Hamur Seç</legend>
+            
             <select name="thickness">
               <option value="İnce">İnce</option>
               <option value="Orta">Orta</option>
               <option value="Kalın">Kalın</option>
             </select>
-          </label>
-          
-            <h3>Ek Malzemeler</h3>
+          </fieldset>
+
+          <fieldset class="extra-toppings">
+            <legend>Ek Malzemeler</legend>
             <p>En fazla on malzeme seçebilirsiniz. (5₺)</p>
+            <div class="extra-toppings-items">
             <label>
               <input type="checkbox" name="extra" value="Pepperoni">
               Pepperoni
@@ -102,28 +114,31 @@
               <input type="checkbox" name="extra" value="Kabak">
               Kabak
             </label>
+          </div>
+          </fieldset>
 
-            <label><h3>Sipariş Notu</h3>
-            <textarea name="note" id="" placeholder="Siparişine eklemek istediğin bir not var mı?"></textarea></label>
-         
-         <div>
-          <button name="decrease">-</button>
-          <p>1</p>
-          <button name="increase">+</button>
-         </div>
-         
-         <div><h4>Sipariş Toplamı</h4>
-        <p>Seçimler: 25.00₺
-          Toplam: 110.50₺
-        </p>
-      <button type="submit">Sipariş Ver</button></div>
+          <fieldset class="order-note">
+            <legend>Sipariş Notu</legend>
+            <textarea name="note" placeholder="Siparişine eklemek istediğin bir not var mı?"></textarea>
+          </fieldset>
 
-       </div>
-      </form>
-       </div>
+          <fieldset class="quantity-selection">
+            <button name="decrease" type="button">-</button>
+            <p>1</p>
+            <button name="increase" type="button">+</button>
 
+            <section class="order-total">
+              <h4>Sipariş Toplamı</h4>
+              <p>Seçimler: 25.00₺</p>
+              <p>Toplam: 110.50₺</p>
+              <button type="submit">Sipariş Ver</button>
+            </section>
+          </fieldset>
 
-     </div>
+          
+        </form>
+      </section>
+    </main>
   </body>
 
 </html>
